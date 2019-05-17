@@ -1,0 +1,14 @@
+package testproject01;
+
+public class Helloworld {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		
+		if(a < 20){
+			System.out.println("A");
+		}
+	}
+
+}
