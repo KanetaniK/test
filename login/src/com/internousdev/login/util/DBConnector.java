@@ -17,7 +17,7 @@ public class DBConnector {
 
 		try{
 			Class.forName(driverName);
-			con = (connection) DriverManager.getConnection(url,user,password);
+			con = (Connection) DriverManager.getConnection(url,user,password);
 		} catch(ClassNotFoundException e){
 			e.printStackTrace();
 		} catch(SQLException e){

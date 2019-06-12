@@ -9,7 +9,7 @@ import com.internousdev.login.util.DBConnector;
 
 
 public class LoginDAO {
-	public LoginDTO select(String name.String password)throws SQLException{
+	public LoginDTO select(String name,String password)throws SQLException{
 		LoginDTO dto = new LoginDTO();
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
