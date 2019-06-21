@@ -18,24 +18,32 @@ public class HelloStrutsDAO {
 
 
 		String sql = "select * from users";
+
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 
 			if(rs.next()){
-				dto.setResult("MySQLと接続できます");
+				dto.setResult("MySQLと接続できます。");
 			}else{
 				dto.setResult("MySQLと接続できません");
 			}
+
 		}catch(SQLException e){
+
 			e.printStackTrace();
+
 		}
 
 		try{
+
 			con.close();
+
 		}catch(SQLException e){
+
 			e.printStackTrace();
 		}
+
 		return dto;
 	}
 
