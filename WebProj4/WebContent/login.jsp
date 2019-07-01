@@ -5,10 +5,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<linl rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 <title>Login</title>
 </head>
 <body>
 	<s:property value="LoginDTOList.get(0).username"/>さん、ようこそ！
+	<br>
+	<table>
+		<tbody>
+			<tr>
+				<th>USERNAME</th>
+				<th>PASSWORD</th>
+			</tr>
+
+			<s:iterator value="loginDTOList">
+				<tr>
+					<td><s:property value="username"/></td>
+					<td><s:property value="password"/></td>
+				</tr>
+			</s:iterator>
+		</tbody>
+	</table>
 </body>
 </html>
