@@ -1,0 +1,6 @@
+127.0.0.1 - - [05/Jul/2019:20:18:07 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [05/Jul/2019:20:18:11 +0900] "GET /WebProj4/ HTTP/1.1" 200 2528
+0:0:0:0:0:0:0:1 - - [05/Jul/2019:20:18:20 +0900] "GET /WebProj4/TestAction.action;jsessionid=FFA4796AF7118C3585C3B751BF8CB053?username=fxg&password=fxhy HTTP/1.1" 200 9554
+0:0:0:0:0:0:0:1 - - [05/Jul/2019:20:34:44 +0900] "GET /WebProj4/ HTTP/1.1" 200 2308
+0:0:0:0:0:0:0:1 - - [05/Jul/2019:20:34:50 +0900] "GET /WebProj4/TestAction.action?username=dfrg&password=rstgrs HTTP/1.1" 200 509
+0:0:0:0:0:0:0:1 - - [05/Jul/2019:20:35:04 +0900] "POST /WebProj4/TestAction.action HTTP/1.1" 200 512
