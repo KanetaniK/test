@@ -23,16 +23,36 @@ public class HelloStrutsDAO {
 		String sql = "select * from users";
 		try{
 
-		} catch(){
+			PreparedStatement ps = con.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+
+			while(rs.next()){
+
+				HelloStrutsDTO dto = new HelloStrutsDTO();
+				dto.setUserId(rs.getInt("user_id"));
+				dto.setUserName(rs.getString("user_name"));
+				dto.setPassword(rs.getString("password"));
+				dto.setResult("MySQLと接続できます。");
+				helloStrutsDTOList.add(dto);
+
+			}
+
+		} catch(SQLException e){
+
+			e.printStackTrace();
 
 		}
 
 		try{
 
-		} catch(){
+			con.close();
+
+		} catch(SQLException e){
+
+			e.printStackTrace();
 
 		}
-		return
+		return helloStrutsDTOList;
 	}
 
 }
