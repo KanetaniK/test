@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="リソース名 &apos;WebProj4/src/NewFile.xml&apos; を &apos;struts.xml&apos; に変更します" description="リソース &apos;NewFile.xml&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/NewFile.xml" name="struts.xml" stamp="1561722056872" updateReferences="true"/>
-</session>
