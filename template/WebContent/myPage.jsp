@@ -88,7 +88,7 @@ table{
 				</tr>
 				<tr>
 					<td>支払い方法</td>
-					<td><s:property value="sesion.total_payment" /></td>
+					<td><s:property value="session.total_payment" /></td>
 				</tr>
 			</table>
 			<s:form action="MyPageAction">

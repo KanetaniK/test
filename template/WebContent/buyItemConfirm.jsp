@@ -71,7 +71,7 @@ table{
 			<table>
 				<tr>
 					<td>商品名</td>
-				    <td><s:property value="session.buyitem_name" /></td>
+				    <td><s:property value="session.buyItem_name" /></td>
 				</tr>
 				<tr>
 					<td>値段</td>
@@ -83,7 +83,7 @@ table{
 				<tr>
 					<td>購入個数</td>
 					<td>
-						<s:property value="session.pay" />
+						<s:property value="session.stock" />
 						<span>個</span>
 					</td>
 				</tr>
