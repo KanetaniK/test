@@ -1,12 +1,14 @@
 package com.internousdev.ecsite.action;
 
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.interceptor.SessionAware;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
 import com.internousdev.ecsite.dao.MyPageDAO;
 import com.internousdev.ecsite.dto.MyPageDTO;
+import com.opensymphony.xwork2.ActionSupport;
 
 public class MyPageAction extends ActionSupport implements SessionAware{
 
@@ -43,13 +45,14 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 		} else if(res == 0){
 			setMessage("商品情報の削除に失敗しました");
 		}
+	}
 
 		public void setDeleteFlg(String deleteFlg){
-			this.deleteFlg = deleteFlg:
+			this.deleteFlg = deleteFlg;
 		}
 
 		@Override
-		public void sesSession(Map<String, Object> session){
+		public void setSession(Map<String, Object> session){
 			this.session = session;
 		}
 
@@ -64,5 +67,4 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 		public void setMessage(String message){
 			this.message = message;
 		}
-	}
 }
