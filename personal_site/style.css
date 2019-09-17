@@ -1,0 +1,659 @@
+@charset "utf-8";
+
+/*---------------------------------------------PC用(index.html)-------------------------------------------*/
+
+*{
+    font-family: ten-mincho;
+    font-style: normal;
+    font-weight: normal;
+    list-style: none;   
+}
+p{
+    font-size: 14pt;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------------------------サイドメニュー---------------------------------------*/
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background-color: cadetblue;
+    color: white;
+    transition: all 0.2s;
+    transform: translate(360px);
+    z-index: 20;
+    padding: 30px;
+}
+nav.open{
+    transform: translate(-20px);
+}
+nav ul{
+    margin-left: -10px;
+}
+nav a{
+    font-size: 18pt;
+    line-height: 60px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+nav a:hover{
+    background-color: white;
+    color: cadetblue;
+}
+
+/*------------------------------------ヘッダ-------------------------------------------*/
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(95, 158, 160, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px 0 rgba(0, 54, 54, 0.7);
+}
+header .container,footer .container{
+    padding : 0;
+}
+.logo{
+    float: left;
+}
+.logo a img{
+    height: 80px;
+    width: auto;
+    margin-top: 5px;
+}
+.fa-bars{
+    font-size: 40px;
+}
+.sidebtn{
+    display: inline-block;
+    color: white;
+    float: right;
+    padding: 5px 10px;
+    border: 2px solid white;
+}
+.sidebtn:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#menubtn{
+    line-height: 80px;
+    font-size: 40px;
+    color: white;
+}
+.sns{
+    float: right;
+}
+.sns li{
+    float: right;
+    margin-right: 20px;
+}
+.sns a:hover{
+    filter: brightness(130%);
+}
+
+/*-------------------------メイン--------------------------------------------------------*/
+
+main{
+    margin: 0 auto;
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    color: white;
+    background-color: darkseagreen;
+    border-radius: 7px;
+    text-decoration: none;
+    text-shadow: none;
+    box-shadow: 0 6px 0 #688968;
+    padding: 10px 15px;
+}
+.btn:hover{
+    filter: brightness(130%);
+}
+.btn:active{
+    box-shadow: none;
+    position: relative;
+    top: 6px;
+}
+.round{
+    border-radius: 50%;
+    width: 45px;
+    height: 50px;
+    line-height: 65px;
+}
+.clear{
+    clear: both;
+    width: 0;
+    height: 0;
+}
+
+/*----------------------------------トップ-------------------------------------------------*/
+
+.jumbotron{
+    background-image: url(top.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+    position: relative;
+    top: 0;
+    color: white;
+    text-shadow: 0 0 10px #008484;
+}
+h1{
+    font-size: 38pt;
+    border-bottom: 3px black double;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+}
+.jumbotron h1{
+    border-bottom: none;
+    text-align: left;
+    margin-bottom: 0;
+    line-height: 38pt;
+    text-decoration: underline double white;
+}
+.jumbotron p{
+    text-align: left;
+    font-size: 16pt;
+}
+.jumbotron .container{
+    background-color: transparent;
+}
+h3{
+    font-size: 20pt;
+}
+.height{
+    padding: 250px 0;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px 0 70px 0;
+    text-align: center;
+}
+/*----------------------------------ニュース-------------------------------------------------*/
+
+
+.newscont{
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    background-image: url(clo_16.jpg);
+    padding: 30px;
+    background-clip: content-box;
+    text-shadow: 0 0 5px white;
+}
+#news h3{
+    margin-bottom: 0;
+    margin-top: -20px;
+    text-decoration: underline dashed cadetblue;
+}
+
+/*-------------------------------作品----------------------------------------------------*/
+
+.workscont{
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding: 30px 35px;
+}
+.workscont img{
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px cadetblue;
+}
+.fa-angle-double-down{
+    font-size: 35px;
+}
+#sojin{
+    background-image: url(sojin_bg.png);
+}
+#sojin strong{
+    text-shadow: 0 0 3px white;
+}
+#nanasi{
+    background-image: url();
+}
+#tama{
+    background-image: url(tama_bg.png);
+}
+#fanart{
+    background-image: url();
+}
+#gallery{
+    background-image: url(gallery_bg.png);
+}
+#event{
+    background-image: url(clo_16.jpg);
+}
+.frame{
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bgpic{
+    color: white;
+}
+.bgpic h1{
+    border-bottom: 3px white double;
+    text-shadow: 0 0 5px black;
+    display: inline-block;
+    background: linear-gradient(transparent 30%,rgba(51, 125, 128, 0.7) 70%);
+    
+}
+.bgpic p{
+    text-shadow: 0 0 4px black;
+    background-color: rgba(51, 125, 128, 0.7);
+    width: 50%;
+    margin: auto;
+}
+.disabled{
+    background-color: darkgray;
+    box-shadow: 0 6px 0 gray;
+}
+
+/*-------------------------------------画像---------------------------------------------*/
+
+.slider div{
+    height: 500px;
+    position: relative;
+}
+.slider div img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+/*-------------------------------------概要---------------------------------------------*/
+
+#about h2{
+    font-size: 28pt;
+    margin: 60px auto;
+}
+.frame p{
+    line-height: 50px;
+    margin: 20px auto;
+}
+strong{
+    font-size: 30px;
+    color: #ff2f97;
+}
+q{
+    font-style: italic;
+}
+.favo{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+.favo li{
+    float: left;
+}
+.favo li:after{
+    content: "／";
+}
+.name{
+    font-size: 18pt;
+}
+
+/*-----------------------------------参加実績--------------------------------------------*/
+
+.table{
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+}
+.year{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 50px auto;
+}
+.year h2{
+    font-size: 24pt;
+    background-color: rgba(0, 54, 54, 0.7);
+    color: white;
+    padding: 5px 30px;
+}
+.year p{
+    padding: 20px;
+}
+.year h3{
+    margin: 0 10px;
+    padding: 0 20px;
+    border-left: 5px double black;
+    border-bottom: 2px solid black;
+}
+.event{
+    text-align: center;
+    margin: 0 auto;
+}
+.event h4{
+    font-size: 18pt;
+    padding: 0 35px;
+}
+.event img{
+    margin: 0 40px;
+    box-shadow: 3px 3px 4px #89715c;
+}
+
+/*------------------------------------フッタ-------------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 230px;
+    background-color: cadetblue;
+    color: white;
+    position: relative;
+    bottom: 0;
+    padding: 5px;
+}
+.biglogo{
+    float: left;
+}
+.biglogo img{
+    height: 130px;
+    margin-top: 20px;
+}
+.sitemap{
+    float: left;
+    text-align: left;
+    margin-left: 50px;
+}
+.sitemap a{
+    text-align: right;
+    color: white;
+    text-decoration: none;
+}
+.sitemap a:hover{
+    background-color: white;
+    color: #008484;
+}
+
+/*--------------------------------------右下------------------------------------------*/
+
+a img{
+    width: 60px;
+    height: 60px;
+}
+.fa-envelope{
+    font-size: 50px;
+    color: white;
+    background-color: #2aa0de;
+    border-radius: 5px;
+    padding: 8px;
+}
+.contact li{
+    float: left;
+    margin-right: 20px;
+}
+.contact{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    width: 430px;
+}
+.contact a{
+    transition: all 0.5s;
+    position: relative;
+}
+.contact a:hover{
+    filter: brightness(130%);
+    bottom: 15px;
+}
+#share{
+    display: inline-block;
+    height: 60px;
+    width: 160px;
+    background-color: #00a3eb;
+    border-radius: 10px;
+}
+#share p{
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    line-height: 20pt;
+    font-family: "メイリオ","Hiragino Kaku Gothic ProN";
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    top: -22px;
+    
+}
+#login{
+    display: inline-block;
+    background-color: #ff71be;
+    padding: 8px;
+    height: 45px;
+    width: 80px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: "メイリオ","Hiragino Kaku Gothic ProN";
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+/*-------------------------------------PC用(loginform.html)-----------------------------------------------*/
+
+
+.loginform{
+    width: 100%;
+    height: 700px;
+    background-image: url(top.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+form{
+    width: 300px;
+    margin: 80px 100px;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+label > input{
+    width: 80%;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+label > input:focus{
+    box-shadow: 0 0 10px #008484;
+    outline: none;
+}
+.sbmcont{
+    margin: 50px auto;
+}
+.sbm{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: "メイリオ","Hiragino Kaku Gothic ProN";
+    font-weight: bold;
+    font-size: 20px;
+    color: cadetblue;
+}
+.sbm:hover{
+    background-color: cadetblue;
+    color: white;
+}
+.sbm:focus{
+    box-shadow: 0 0 10px #008484;
+    outline: none;
+}
+.sbm:active{
+}
+.yokoku{
+    position: fixed;
+    top: 300px;
+    left: 40%;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+
+
+/*-------------------------------------PC用(mailform.html)-----------------------------------------------*/
+
+.mailform{
+    height: 900px;
+    width: 100%;
+    background-image: url(clo_16.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+}
+.mailform form{
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+}
+.mailform select{
+    font-size: 16pt;
+}
+
+/*-------------------------------------------タブレット用---------------------------------------------------*/
+
+@media (max-width:800px){
+    .workscont{
+        width: 50%;
+    }
+    .event img{
+        width: 60%;
+    }
+    .jumbotron{
+        background-image: url(top-sma.png);
+        background-attachment: scroll;
+    }
+    #sojin{
+        background-image: url(sojin_bg-sma.png);
+        background-attachment: scroll;
+    }
+    #tama{
+        background-image: url(tama_bg-sma.png);
+        background-attachment: scroll;
+    }
+    #gallery{
+        background-attachment: scroll;
+    }
+    #event{
+        background-size: auto;
+        background-repeat: repeat;
+    }
+    .newscont{
+        width: 100%;
+    }
+    .container{
+        width: 90%;
+    }
+    .frame p{
+        width: 90%;
+    }
+}
+
+/*----------------------------------タブレット用（loginform.html）------------------------------------------*/
+
+@media(max-width:800px){
+    .loginform form{
+        position: relative;
+        margin: 50px auto;
+    }
+    .yokoku{
+        float: left;
+        width: 100%;
+    }
+}
+
+/*-----------------------------------------------スマホ用--------------------------------------------------*/
+
+@media (max-width:480px){
+    .workscont{
+        width: 100%;
+    }
+    .contact{
+        transform: scale(0.7);
+        bottom:50px;
+    }
+    .biglogo{
+        width: 100%;
+    }
+    .sitemap{
+        width: 100%;
+    }
+    footer{
+        height: 600px;
+    }
+    .sns{
+        display: none;
+    }
+    .jumbotron{
+        background-image: url(top-sma.png);
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    #sojin{
+        background-image: url(sojin_bg-sma.png);
+        background-attachment: scroll;
+        background-size: contain;
+    }
+    #tama{
+        background-image: url(tama_bg-sma.png);
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    #gallery{
+        background-attachment: scroll;
+        background-size: auto;
+        background-repeat: repeat;
+    }
+    #event{
+        background-size: auto;
+        background-repeat: repeat;
+    }
+    .newscont{
+        width: 100%;
+    }
+    .container{
+        width: 98%;
+    }
+    .frame p{
+        width: 90%;
+    }
+}
+
+/*--------------------------------------スマホ用（loginform.html）------------------------------------------*/
+
+@media(max-width:480px){
+    .loginform form{
+        position: relative;
+        margin: 50px auto;
+    }
+    .yokoku{
+        position: relative;
+        left: 0;
+        float: left;
+        width: 100%;
+    }
+}
